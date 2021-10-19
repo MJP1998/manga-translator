@@ -1,6 +1,6 @@
 # Personal project : Manga Translator
 
-This project is a personnal project with the goal of automating manga translation with the object detection algorithms : YOLOv4 and YOLOv3. <br/>
+This project is a personnal project from November 2020 with the goal of automating manga translation with the object detection algorithms : YOLOv4 and YOLOv3. <br/>
 The final goal of this little project was to allow the use this model in a website with tensorflow-js by reimplementing the different models but after a few tries I understood that the computing power demanded to each computer was way too big and therefore the tensorflow-js implementation was not adapted. <br/>  
 
 It is a personal project done outside of courses hours to self-study on the potential and the difficulty of implementation of the different models before I had any official courses on the subject.
@@ -20,7 +20,7 @@ To translate a full chapter, we used the following pipeline :
 
 ## Result
 
-With the Yolov4 model, the result is quite pleasant. 
+With the Yolov4 model, the result is quite pleasant, even if the translation is still lacking, the detection is pretty accurate on many samples. 
 On the contrary with the tiny models, the text detected isn't generalised to particular pages styles.
 Yolov4 and v3 perform quite well, we show some of the results below.
 <br/>  
