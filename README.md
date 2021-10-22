@@ -20,8 +20,7 @@ To translate a full chapter, we used the following pipeline :
 
 ## Result
 
-With the Yolov4 model, the result is quite pleasant, even if the translation is still lacking, the detection is pretty accurate on many samples. 
-On the contrary with the tiny models, the text detected isn't generalised to particular pages styles.
+With the Yolov4-tiny model, the result is quite pleasant, even if the translation is still lacking, the detection is pretty accurate on many samples. 
 Yolov4 and v3 perform quite well, we show some of the results below.
 <br/>  
 Detected         |  Translated
