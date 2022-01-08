@@ -12,14 +12,15 @@ I created a 400 images dataset for the detection of the bubbles in the pages.
 To translate a full chapter, we used the following pipeline :
 1. Downloaded the images from the website in input
 2. Detected the text zone with the Yolo model
-3. Detected the text inside with easy-ocr
+3. Detected the text inside with pytesseract (we also tried easyocr)
 4. Translated it with Google translate api
 5. Inpainted the zone of the text
 6. Put the translated text inside with the right dimensions 
 
-You will find in utils the Chapter and Page class. The chapter class creates all pages from the source given and then calls the translation function.
+You will find the Chapter and Page class in the utils folder. The chapter class creates all pages from the source given and then calls the translation function.
+We used [Tesseract OCR](https://github.com/tesseract-ocr) to detect the text inside, for most mangas the text is written verticaly so we used jpn_vert and jpn trained data to get a good result. Kor, Kor_vert, chi_sim and chi_sim_vert as well as eng trained data can also be used.
 
-## Result
+## Results
 
 With the Yolov4-tiny model, the result is quite pleasant, even if the translation is still lacking, the detection is pretty accurate on many samples. 
 Yolov4 and v3 perform quite well, we show some of the results below.
@@ -37,6 +38,8 @@ Detected         |  Translated
 
 <br/>  
 
+
+The different errors and poor results coming from this algorithm 
 
 Thanks to Darknet team, Roboflow, google translate and Google Colab for making such a custom use of existing algorithms nice and easy. 
 
