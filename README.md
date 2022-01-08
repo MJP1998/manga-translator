@@ -1,14 +1,13 @@
 # Personal project : Manga Translator
 
-This project is a personnal project from November 2020 with the goal of automating manga translation with the object detection algorithms : YOLOv4 and YOLOv3. <br/>
-The final goal of this little project was to allow the use this model in a website with tensorflow-js by reimplementing the different models but after a few tries I understood that the computing power demanded to each computer was way too big and therefore the tensorflow-js implementation was not adapted. <br/>  
+This is a personal project begun in November 2020 with the objective of automating manga translation using the object identification algorithms YOLOv4 and YOLOv3.
+<br/>
 
-It is a personal project done outside of courses hours to self-study on the potential and the difficulty of implementation of the different models before I had any official courses on the subject.
-
+It is a personal project completed outside of class hours to self-study on the possibilities and difficulties of implementing the various approaches prior to taking any official classes on the subject. 
 ## Implementation details
 
-We made use of Roboflow's tools to use Yolov4 on a custom dataset, we then tried yolov3 to reduce the amount of parameters but neither of these worked with tensorflow-js.
-I created a 300 images dataset for text detection.
+We made use of Roboflow's tools to use Yolov4 on a custom dataset, we then tried yolov3 to reduce the amount of parameters.
+I created a 400 images dataset for the detection of the bubbles in the pages.
 
 To translate a full chapter, we used the following pipeline :
 1. Downloaded the images from the website in input
@@ -18,11 +17,14 @@ To translate a full chapter, we used the following pipeline :
 5. Inpainted the zone of the text
 6. Put the translated text inside with the right dimensions 
 
+You will find in utils the Chapter and Page class. The chapter class creates all pages from the source given and then calls the translation function.
+
 ## Result
 
 With the Yolov4-tiny model, the result is quite pleasant, even if the translation is still lacking, the detection is pretty accurate on many samples. 
 Yolov4 and v3 perform quite well, we show some of the results below.
-To load the model in a simple manner, we converted it into a keras model and then loaded it thanks to a yolov4 implementation taken form this repositary : <a src="https://github.com/taipingeric/yolo-v4-tf.keras">YoloV4 Keras</a>
+To load the model in a simple manner, we converted it into a keras model and then loaded it thanks to a yolov4 implementation taken form this repository : 
+[YoloV4 Keras](https://github.com/taipingeric/yolo-v4-tf.keras)
 
 
 <br/>  
@@ -36,7 +38,7 @@ Detected         |  Translated
 <br/>  
 
 
-Thanks to Darknet team, Roboflow and Google Colab for making such a custom use of existing algorithms nice and easy. 
+Thanks to Darknet team, Roboflow, google translate and Google Colab for making such a custom use of existing algorithms nice and easy. 
 
 
 
