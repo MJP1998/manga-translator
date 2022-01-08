@@ -8,7 +8,6 @@ from google_trans_new.google_trans_new import google_translator
 from fpdf import FPDF
 from yolov4.models import Yolov4
 from PIL import Image
-import easyocr
 
 
 class Chapter:
