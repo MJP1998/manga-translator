@@ -39,8 +39,16 @@ Detected         |  Translated
 <br/>  
 
 
-The different errors and poor results coming from this algorithm 
 
+## Next Steps
+
+The different errors and poor results coming from this algorithm are related to the performance of the OCR.
+A way to improve performance would be to retrain the OCR on a similar environment.
+
+Then we could make multiple inference on the OCR-translation pipeline with differently trained OCR and finally we could add a transformer model to get a coherent output in each cases.
+
+<br />
+<br/>
 Thanks to Darknet team, Roboflow, google translate and Google Colab for making such a custom use of existing algorithms nice and easy. 
 
 
