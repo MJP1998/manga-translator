@@ -1,6 +1,6 @@
 # Personal project : Manga Translator
 
-This is a personal project begun in November 2020 with the objective of automating manga translation using the object identification algorithms YOLOv4 and YOLOv3.
+This is a personal project begun in July 2020 with the objective of automating manga translation using the object identification algorithms YOLOv4 and YOLOv3.
 <br/>
 
 It is a personal project completed outside of class hours to self-study on the possibilities and difficulties of implementing the various approaches prior to taking any official classes on the subject. 
@@ -42,14 +42,14 @@ Detected         |  Translated
 
 ## Next Steps
 
-The different errors and poor results coming from this algorithm are related to the performance of the OCR.
+The different errors and poor results coming from this algorithm are related to the performance of the OCR, in particular when the text is handwritten.
 A way to improve performance would be to retrain the OCR on a similar environment.
 
 Then we could make multiple inference on the OCR-translation pipeline with differently trained OCR and finally we could add a transformer model to get a coherent output in each cases.
 
 <br />
 <br/>
-Thanks to Darknet team, Roboflow, google translate and Google Colab for making such a custom use of existing algorithms nice and easy. 
+Thanks to the Darknet team, Roboflow, google translate and Google Colab for making such a custom use of existing algorithms nice and easy. 
 
 
 
