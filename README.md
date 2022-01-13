@@ -1,9 +1,9 @@
 # Personal project : Manga Translator
 
-This is a personal project with the objective of automating manga translation using the object identification algorithms YOLOv4 and YOLOv3.
+This is a personal project with the objective of automating manga translation using the object identification algorithms YOLOv4 and YOLOv3. After detecting the boxes, we used an OCR to get the text and then performed translation, cleaning, typesetting and redrawing to complete the task.
 <br/>
 
-It is a personal project completed outside of class hours to self-study on the possibilities and difficulties of implementing the various approaches prior to taking any official classes on the subject. 
+It was completed outside of class hours to self-study on the possibilities and difficulties of implementing the various approaches prior to taking any official classes on the subject. 
 ## Implementation details
 
 We made use of Roboflow's tools to use Yolov4 on a custom dataset, we then tried yolov3 to reduce the amount of parameters.
