@@ -1,6 +1,6 @@
 # Personal project : Manga Translator
 
-This is a personal project begun in July 2020 with the objective of automating manga translation using the object identification algorithms YOLOv4 and YOLOv3.
+This is a personal project with the objective of automating manga translation using the object identification algorithms YOLOv4 and YOLOv3.
 <br/>
 
 It is a personal project completed outside of class hours to self-study on the possibilities and difficulties of implementing the various approaches prior to taking any official classes on the subject. 
